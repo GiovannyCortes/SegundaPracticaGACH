@@ -1,0 +1,23 @@
+﻿<h1 style="text-align: center;" class="text-success">
+    Insert Comic
+</h1>
+
+<form method="post">
+    <input type="hidden" class="form-control" name="idcomic" value="0"/>
+
+    <label class="form-label mt-3">Nombre</label>
+    <input type="text" class="form-control" name="nombre" required />
+
+    <label class="form-label mt-3">Imagen</label>
+    <input type="text" class="form-control" name="imagen" required />
+
+    <label class="form-label mt-3">Descripción</label>
+    <input type="text" class="form-control" name="descripcion" required />
+
+    <button class="btn btn-success w-100 my-3">
+        Insert
+    </button>
+</form>
+
+@Html.ActionLink("Volver", "ShowComics", "Comics", null,
+                 new { @class = "btn btn-secondary", style = "font-weight: bold;"})
